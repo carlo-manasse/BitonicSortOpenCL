@@ -1,0 +1,11 @@
+CC = gcc 
+INCL = -I /home/carlo-desktop/NVIDIA_GPU_Computing_SDK/OpenCL/common/inc/
+LIBS =  -lm -lOpenCL
+SOURCES = functions.c main.c
+TARGET = BitonicSortParallel 
+all:
+	$(CC) $(SOURCES) $(INCL) $(LIBS) -o $(TARGET)
+	
+clean:
+	rm $(TARGET)
+

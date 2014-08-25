@@ -1,0 +1,11 @@
+#!/bin/bash 
+         ESPONENTE=0
+	 BASE=2
+	
+         while [  $ESPONENTE -lt 23 ]; do
+		let N=BASE**ESPONENTE	
+             
+		./bitSorter_seq $N 0 4194304 -e >> exectimeseq_1.txt
+             let ESPONENTE=ESPONENTE+1 
+         done
+	

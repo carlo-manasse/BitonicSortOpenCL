@@ -1,0 +1,11 @@
+#!/bin/bash 
+         ESPONENTE=1
+	 BASE=2
+	
+         while [  $ESPONENTE -lt 23 ]; do
+		let N=BASE**ESPONENTE	
+             
+		./BitonicSortParallel $N 0 4194304 -a >> exectimepar_2.txt
+             let ESPONENTE=ESPONENTE+1 
+         done
+	
